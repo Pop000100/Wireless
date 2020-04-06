@@ -7,7 +7,13 @@ namespace Wireless.Tiles
 {
 	public class WirelessTransceiver : WirelessTransmitter
 	{
-		public override void MouseOver(int i, int j)
+        public override bool Autoload(ref string name, ref string texture)
+        {
+            return ModContent.GetInstance<Config>().wirelessTransceiver;
+        }
+
+
+        public override void MouseOver(int i, int j)
 		{
 			if(Main.tile[i, j].frameY == 18)
 			{

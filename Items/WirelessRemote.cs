@@ -11,8 +11,13 @@ namespace Wireless.Items
 {
 	public class WirelessRemote : CoordinateConfigurator
 	{
-		
-		public override void SetDefaults()
+
+        public override bool Autoload(ref string name)
+        {
+            return ModContent.GetInstance<Config>().wirelessRemote;
+        }
+
+        public override void SetDefaults()
 		{
 			item.width = 14;
 			item.height = 30;

@@ -14,3 +14,10 @@ ItemTooltip.CoordinateConfigurator=Links Wireless Transmitters to Wireless Recei
 ItemTooltip.WirelessReceiver=Receives signals from linked Wireless Transmitters and Remotes
 ItemTooltip.WirelessRemote=Sends signals to a linked Wireless Receiver
 ItemTooltip.WirelessTransceiver=Sends and receives signals from linked devices
+
+Config.WirelessRemote=Toggle Wireless Remote
+Config.WirelessRemote.Desc=Enables the wireless remote.
+Config.WirelessTransceiver=Toggle Wireless Transceiver
+Config.WirelessTransceiver.Desc=Enables the wireless transceiver.
+Config.SellerNPC=Wireless Component Seller
+Config.SellerNPC.Desc=Which NPC sells wireless components.

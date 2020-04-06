@@ -9,8 +9,13 @@ namespace Wireless.Items
 {
 	public class WirelessTransceiver : ModItem
 	{
-		
-		public override void SetDefaults()
+
+        public override bool Autoload(ref string name)
+        {
+            return ModContent.GetInstance<Config>().wirelessTransceiver;
+        }
+
+        public override void SetDefaults()
 		{
 			item.width = 16;
 			item.height = 16;
